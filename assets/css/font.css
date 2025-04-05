@@ -1,0 +1,47 @@
+@font-face {
+  font-family: "HappinessSans";
+  src: url("../fonts/Happiness-Sans-Regular.woff2") format("woff2"),
+    url("../fonts/Happiness-Sans-Regular.woff") format("woff");
+
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: "HappinessSans";
+  src: url("../fonts/Happiness-Sans-Bold.woff2") format("woff2"),
+    url("../fonts/Happiness-Sans-Bold.woff") format("woff");
+
+  font-weight: 700;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: "HappinessSans";
+  src: url("../fonts/Happiness-Sans-Title.woff2") format("woff2"),
+    url("../fonts/Happiness-Sans-Title.woff") format("woff");
+
+  font-weight: 900;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "sf-mono";
+  src: url("../fonts/sf-mono-regular.woff2") format("woff2"),
+    url("../fonts/sf-mono-regular.woff") format("woff");
+  unicode-range: U+0020-007E;
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "sf-mono";
+  src: url("../fonts/sf-mono-bold.woff2") format("woff2"),
+    url("../fonts/sf-mono-bold.woff") format("woff");
+  unicode-range: U+0020-007E;
+  font-weight: 700;
+  font-style: normal;
+  font-display: swap;
+}
