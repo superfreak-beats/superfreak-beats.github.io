@@ -68,15 +68,15 @@ body {
     "Segoe UI Symbol", sans-serif;
 
   line-height: 1.6;
-  letter-spacing: -0.75px;
+  letter-spacing: -0px;
   background: var(--background-black);
   color: snow;
 
   background-image: linear-gradient(
-      rgba(255, 255, 255, 0.15) 1px,
+      rgba(255, 255, 255, 0.1) 1px,
       transparent 1px
     ),
-    linear-gradient(90deg, rgba(255, 255, 255, 0.15) 1px, transparent 1px);
+    linear-gradient(90deg, rgba(255, 255, 255, 0.1) 1px, transparent 1px);
   background-size: 24px 24px;
 
   /* background:
@@ -186,13 +186,6 @@ a:active {
   height: 100%;
 
   z-index: 1001;
-
-  background-image: linear-gradient(
-      rgba(255, 255, 255, 0.1) 1px,
-      transparent 1px
-    ),
-    linear-gradient(90deg, rgba(255, 255, 255, 0.1) 1px, transparent 1px);
-  background-size: 16px 16px;
 }
 
 .intro-text .hide {
@@ -539,15 +532,11 @@ section.header {
   background-image: linear-gradient(
     to right,
     #c3c1be 0%,
-    #ffffff 51%,
+    #e7e7e7 51%,
     #d7d4d1 100%
   );
-  box-shadow: 0 0 10px #868686;
-  box-shadow: inset 0px 1px 0px rgba(255, 255, 255, 1),
-    0px 1px 3px rgba(0, 0, 0, 0.3);
 
   color: #000;
-  border: 1px solid #fff;
   padding: 0.5rem 0.75rem 0.6rem;
 
   border-radius: 20px;
@@ -557,7 +546,7 @@ section.header {
   background-image: linear-gradient(
     to right,
     #d7d4d1 0%,
-    #ffffff 51%,
+    #e7e7e7 51%,
     #c3c1be 100%
   );
 }
@@ -1136,10 +1125,7 @@ section.beat button.nextBtn > img {
     scale: 1.5;
   }
 
-  footer h2 {
-    font-size: 1.25rem;
-  }
-
+  footer h2,
   footer p {
     font-size: 1rem;
   }
@@ -1176,7 +1162,7 @@ section.beat button.nextBtn > img {
   }
 
   section.header.profile figure > img {
-    width: 75%;
+    width: 62.5%;
   }
 
   section.info > figure img {
