@@ -70,7 +70,7 @@ body {
   line-height: 1.6;
   letter-spacing: -0.75px;
   background: var(--background-black);
-  color: var(--text-color-white);
+  color: snow;
 
   background-image: linear-gradient(
       rgba(255, 255, 255, 0.1) 1px,
@@ -194,7 +194,7 @@ a:active {
   font-size: 1rem;
   font-weight: 700;
   text-wrap: nowrap;
-  color: #fff;
+  color: snow;
 }
 
 .hide {
@@ -244,7 +244,7 @@ header {
   backdrop-filter: blur(4px);
   -webkit-backdrop-filter: blur(4px);
 
-  color: #fff;
+  color: snow;
   /* mix-blend-mode: difference;
   mix-blend-mode: luminosity; */
   width: 100%;
@@ -288,11 +288,16 @@ header.transparent > img.dark {
 footer {
   margin: 12.5vh auto 1rem;
   text-align: center;
+
+  color: silver;
 }
 
-footer h2,
+footer h2 {
+  font-size: 0.75rem;
+}
+
 footer p {
-  font-size: 0.5rem;
+  font-size: 0.625rem;
 }
 
 section.info {
@@ -334,6 +339,26 @@ section.info h2 > mark {
   background: #ddd;
 
   margin: 1rem auto;
+}
+
+.wave {
+  --size: 50px;
+  --b: 10px;
+  --m: 0.5;
+  --p: calc(var(--m) * var(--size));
+  --R: calc(var(--size) * sqrt(var(--m) * var(--m) + 1));
+
+  --_g: #0000 calc(99% - var(--b)), #000 calc(101% - var(--b)) 99%, #0000 101%;
+  mask: radial-gradient(
+        var(--R) at left 50% bottom calc(-1 * var(--p)),
+        var(--_g)
+      )
+      calc(50% - 2 * var(--size)) 50% / calc(4 * var(--size))
+      calc(var(--size) + var(--b)) repeat-x,
+    radial-gradient(var(--R) at left 50% top calc(-1 * var(--p)), var(--_g)) 50%
+      50% / calc(4 * var(--size)) calc(var(--size) + var(--b)) repeat-x;
+  background: linear-gradient(90deg, purple, yellowgreen, orangered);
+  height: 200px;
 }
 
 section.info figure {
@@ -495,14 +520,14 @@ section.header {
 .header-wrapper.foot {
   background-image: linear-gradient(
     to right,
-     #d7d4d1 0%,
+    #d7d4d1 0%,
     #ffffff 51%,
-     #c3c1be 100%
+    #c3c1be 100%
   );
 }
 
 section.header.foot {
-  margin: 6rem auto 0;
+  margin: 3rem auto 0;
 }
 
 section.header h1 {
@@ -556,7 +581,7 @@ section.header.profile p {
   width: 100vw;
   height: 100vh;
 
-  color: #fff;
+  color: snow;
   background: #000;
 }
 
@@ -787,7 +812,7 @@ section.beat .purchase-wrapper figure {
 
   top: 1.5rem;
   transform: translateX(-50%);
-  left: 20%;
+  left: 5rem;
 
   padding: 1rem 1rem 1rem 0;
 
@@ -1065,9 +1090,12 @@ section.beat button.nextBtn > img {
     scale: 1.5;
   }
 
-  footer h2,
+  footer h2 {
+    font-size: 1.25rem;
+  }
+
   footer p {
-    font-size: 0.825rem;
+    font-size: 1rem;
   }
 
   section.info {
@@ -1077,6 +1105,11 @@ section.beat button.nextBtn > img {
   .vertical_line {
     height: 40px;
   }
+
+  .wave {
+  --size: 30px;
+  height: 120px;
+}
 
   section.info h1 {
     font-size: 1.875rem;
@@ -1116,7 +1149,7 @@ section.beat button.nextBtn > img {
   }
 
   section.header.foot {
-    margin: 9rem auto 0;
+    margin: 6rem auto 0;
   }
 
   .header-wrapper {
