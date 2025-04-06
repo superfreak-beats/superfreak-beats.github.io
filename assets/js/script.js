@@ -52,7 +52,8 @@ $(document).ready(function () {
     $("video").trigger("pause");
     $("section.beat").hide();
 
-    $("html, body").animate({ scrollTop: 0 }, 200);
+   var offset = $("#listhome").offset();
+    $("html, body").animate({ scrollTop: offset.top }, 400);
     $("main, body").removeClass("hidden");
     $("header").removeClass("transparent");
 
