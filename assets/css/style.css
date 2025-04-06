@@ -168,6 +168,11 @@ a:active {
 /* loading */
 
 .intro {
+  font-family: Arial, Helvetica, -apple-system, BlinkMacSystemFont, system-ui,
+    Roboto, "Helvetica Neue", "Segoe UI", "Apple SD Gothic Neo", "Noto Sans KR",
+    "Malgun Gothic", "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol",
+    sans-serif;
+
   background: #000;
   position: fixed;
   top: 0;
@@ -209,16 +214,21 @@ a:active {
   display: inline-block;
 }
 
+.headtext {
+  opacity: 0;
+}
+
 .hide.head span {
   display: flex;
 
   align-items: center;
+  transform: none;
 }
 
 .hide.head div {
   display: inline-block;
 
-  background: radial-gradient(circle at center, #ee7a00 50%, transparent 0%),
+  background: radial-gradient(circle at center, #ee7a00 62.5%, transparent 0%),
     transparent;
   background-size: 0.25rem 0.25rem;
 
@@ -1095,11 +1105,17 @@ section.beat button.nextBtn > img {
 /* mobile */
 @media screen and (max-width: 720px) {
   .intro-text .hide {
-    font-size: 1.375rem;
+    font-size: 1.75rem;
   }
 
   .hide.cap span {
-    font-size: 1.25rem;
+    font-size: 1.375rem;
+  }
+
+  .hide.head div {
+    background-size: 0.25rem 0.25rem;
+    width: 1.75rem;
+    height: 1.75rem;
   }
 
   header {
