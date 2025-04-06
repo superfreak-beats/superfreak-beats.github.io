@@ -232,8 +232,8 @@ a:active {
     transparent;
   background-size: 0.125rem 0.125rem;
 
-  width: .75rem;
-  height: .75rem;
+  width: 0.75rem;
+  height: 0.75rem;
 
   margin-right: 0.5rem;
 }
@@ -379,7 +379,7 @@ section.info h2 > mark {
 .wave {
   --size: 50px;
   --b: 10px;
-  --m: 0.5;
+  --m: 0.25;
   --p: calc(var(--m) * var(--size));
   --R: calc(var(--size) * sqrt(var(--m) * var(--m) + 1));
 
@@ -392,8 +392,9 @@ section.info h2 > mark {
       calc(var(--size) + var(--b)) repeat-x,
     radial-gradient(var(--R) at left 50% top calc(-1 * var(--p)), var(--_g)) 50%
       50% / calc(4 * var(--size)) calc(var(--size) + var(--b)) repeat-x;
-  background: linear-gradient(90deg, purple, yellowgreen, orangered);
-  height: 200px;
+  background: linear-gradient(90deg, yellowgreen, silver, orange);
+
+  height: 160px;
 }
 
 section.info figure {
@@ -1156,9 +1157,10 @@ section.beat button.nextBtn > img {
     height: 120px;
   }
 
-  section.info h1 {
+  section.info h1,
+  section.header h1 {
     font-size: 1.875rem;
-    letter-spacing: -0.5px;
+    letter-spacing: -0.25px;
 
     /* padding: 0.625rem 0.875rem; */
   }
@@ -1198,12 +1200,8 @@ section.beat button.nextBtn > img {
   }
 
   .header-wrapper {
-    padding: 0.75rem 1.25rem 1rem;
-    border-radius: 12px;
-  }
-
-  section.header h1 {
-    font-size: 1.875rem;
+    padding: 0.625rem 1rem 0.875rem;
+    border-radius: 14px;
   }
 
   section.info figure,
