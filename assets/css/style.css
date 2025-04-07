@@ -345,7 +345,6 @@ section.header h1 {
 
 section.info h2 {
   font-size: calc(0.375rem + 0.75vw);
-  font-weight: 700;
   text-align: center;
 
   margin: 1rem auto 0;
