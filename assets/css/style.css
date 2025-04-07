@@ -512,8 +512,8 @@ section.beatlist .list-wrapper figure {
 }
 
 section.beatlist .list-wrapper figure > div {
-  width: 1.375rem;
-  height: 1.375rem;
+  width: 1.25rem;
+  height: 1.25rem;
   border-radius: 50%;
 }
 
@@ -1254,8 +1254,10 @@ section.beat button.nextBtn > img {
   }
 
   section.beatlist .list-wrapper figure > div {
-    width: 2rem;
-    height: 2rem;
+    width: 1.5rem;
+    height: 1.5rem;
+
+    margin-top: .125rem;
   }
 
   section.caution {
