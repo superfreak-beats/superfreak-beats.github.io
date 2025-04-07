@@ -520,10 +520,9 @@ section.beatlist .list-wrapper figure > div {
 section.caution {
   margin: 10vh 0 15vh;
 
-  box-shadow: 0 0 20px 2px #fff;
-  border-radius: 2px;
-  border: 1px solid #ddd;
-  padding: 0.5rem;
+  box-shadow: 0 0 20px 2px #ddd;
+  border-radius: 2.5px;
+  padding: 0.5rem .75rem .75rem;
 }
 
 section.caution h1 {
@@ -1260,8 +1259,10 @@ section.beat button.nextBtn > img {
   section.caution {
     margin: 5vh 0 10vh;
 
-    box-shadow: none;
+    box-shadow: 0 0 0px 1px #ddd;
     border: none;
+
+      padding: 1rem 1.5rem 1rem;
   }
 
   section.caution h1 {
