@@ -68,7 +68,7 @@ body {
     "Segoe UI Symbol", sans-serif;
 
   line-height: 1.6;
-  letter-spacing: -0px;
+  letter-spacing: -0.1px;
   background: var(--background-black);
   color: snow;
 
@@ -520,7 +520,10 @@ section.beatlist .list-wrapper figure > div {
 section.caution {
   margin: 10vh 0 15vh;
 
-  opacity: 0.8;
+  box-shadow: 0 0 20px 2px #fff;
+  border-radius: 2px;
+  border: 1px solid #ddd;
+  padding: 0.5rem;
 }
 
 section.caution h1 {
@@ -1256,6 +1259,8 @@ section.beat button.nextBtn > img {
 
   section.caution {
     margin: 5vh 0 10vh;
+
+    box-shadow: 0 0 10px 1px #fff;
   }
 
   section.caution h1 {
