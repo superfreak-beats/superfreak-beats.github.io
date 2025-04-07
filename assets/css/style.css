@@ -517,6 +517,35 @@ section.beatlist .list-wrapper figure > div {
   border-radius: 50%;
 }
 
+section.caution {
+  margin: 10vh 0 15vh;
+
+  opacity: 0.8;
+}
+
+section.caution h1 {
+  text-align: center;
+  font-size: 0.75rem;
+  font-weight: 700;
+}
+section.caution h2 {
+  text-align: center;
+  font-size: 0.7rem;
+  word-break: keep-all;
+  font-weight: 700;
+  width: 40ch;
+
+  margin: 0.5rem auto 0.2rem;
+}
+
+section.caution p {
+  text-align: center;
+  font-size: 0.625rem;
+  word-break: keep-all;
+  width: 40ch;
+  margin: 0 auto;
+}
+
 section.header {
   margin: 0 auto 3rem;
   width: 100%;
@@ -1223,6 +1252,25 @@ section.beat button.nextBtn > img {
   section.beatlist .list-wrapper figure > div {
     width: 2rem;
     height: 2rem;
+  }
+
+  section.caution {
+    margin: 5vh 0 10vh;
+  }
+
+  section.caution h1 {
+    font-size: 1.25rem;
+  }
+  section.caution h2 {
+    font-size: 0.925rem;
+    width: 100%;
+
+    margin: 0.75rem auto 0.25rem;
+  }
+
+  section.caution p {
+    font-size: 0.875rem;
+    width: 100%;
   }
 
   section.beat aside,
