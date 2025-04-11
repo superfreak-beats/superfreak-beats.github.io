@@ -15,10 +15,10 @@ tl.add("start").to(".text", {
 /* SLIDER OPTIONAL */
 // tl.to(".slider", { y: "-100%", duration: 1.5, delay: 0.5 });
 tl.to(".intro", {
-  opacity: 0,
+  // opacity: 0,
   duration: 0.75,
   delay: 0.35,
-  display: "none",
+  // display: "none",
 }); /* ,  */
 
 /* HOME PAGE CONTENT ANIMATION */
